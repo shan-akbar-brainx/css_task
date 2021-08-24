@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Limited pricing plans</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			*{
+				text-align:center;
+				font-family:sans-serif;
+				line-height:2.5;
+			}
+			
+			section {
+				margin:auto;
+				position:relative;
+			}
+			
+			div {
+				display:inline-block;
+				border:2px solid #d9d9d9;
+				border-radius: 5px;
+				padding: 20px 10px 20px 10px;
+				width:300px;
+				transition:all 0.5s;
+				margin:5px;
+				transform:translateY(-35px);
+			}
+			
+			div:hover {
+				transform: translateY(-55px);
+			}
+	
+			button {
+				padding: 5px;
+				width: 50%;
+				border:none;
+				border-radius: 5px;
+				font-size: 15px;
+				color:#5bd75b;
+			}
+			
+			button:hover {
+				background-color:#5bd75b;
+				color:white;
+			}
+			@media screen and (max-width:600px) {
+				div {
+					width: 100%;
+				}
+			}
+			ul {
+				list-style-image: url('bullet.png');
+			}
+			
+			li {
+				text-align:left;
+			}
+			
+			.p1 {
+				border:1px solid #d9d9d9;
+				border-radius:25px;
+				color:#5bd75b;
+				font-weight:500;
+				font-size:15px;
+				display:inline;
+				padding:10px;
+				
+			}
+			
+			#div_mid{
+				border-color:#5bd75b;
+				transform:translateY(10px);
+				background: url(corner.png) 0 0;
+				background-repeat: no-repeat;
+				background-size: 70px 70px;
+			}
+			
+			#div_mid:hover{
+				transform: translateY(-20px);
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<header style="margin-top:100px;">
+			<h1>Limited pricing plans</h1>
+		</header>
+		<section>
+			<div>
+				<h1>Limited</h1>
+				<p><b>$2</b>/ month per user</p>
+				<p class="p1">Available for a month</p>
+				<ul>
+					<li><b>8</b> Team members</li>
+					<li><b>6</b> Team playlists</li>
+					<li><b>15</b> Public playlists</li>
+				</ul>
+				<button>Get started</button>
+			</div>
+			<div id="div_mid">
+				<h1>Brilliant</h1>
+				<p><b>$5</b> / month per user</p>
+				<p class="p1">Free 30 day trial</p>
+				<ul>
+					<li><b>Unlimited</b> Team members</li>
+					<li><b>Unlimited</b> Team playlists</li>
+					<li><b>Unlimited</b> Public playlists</li>
+					<li>Send files upto 100mb</li>
+					<li>Team analytics</li>
+				</ul>
+				<button style="background-color:#5bd75b;color:white">Get started</button>
+			</div>
+			<div>
+				<h1>Basic</h1>
+				<p><b>$0</b> / month per user</p>
+				<p class="p1">Totally free</p>
+				<ul>
+					<li><b>5</b> Team members</li>
+					<li><b>3</b> Team playlists</li>
+					<li><b>10</b> Public playlists</li>
+				</ul>
+				<button>Get started</button>
+			</div>
+		</section>
+		<footer style="clear:left;margin-top:100px">
+			<p>&copy;2020 Limited pricing plans. All rights reserved | Design by W3layouts</p>
+		</footer>
+	</body>
+</html>
