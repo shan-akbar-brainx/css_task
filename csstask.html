@@ -8,12 +8,17 @@
 			*{
 				text-align:center;
 				font-family:sans-serif;
-				line-height:2.5;
+				
 			}
 			
-			section {
+			.flex-container{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
 				margin:auto;
 				position:relative;
+				align-items: center;
+				
 			}
 			
 			div {
@@ -24,11 +29,11 @@
 				width:300px;
 				transition:all 0.5s;
 				margin:5px;
-				transform:translateY(-35px);
+				height:75%;
 			}
 			
 			div:hover {
-				transform: translateY(-55px);
+				transform: translateY(-20px);
 			}
 	
 			button {
@@ -44,53 +49,53 @@
 				background-color:#5bd75b;
 				color:white;
 			}
-			@media screen and (max-width:600px) {
-				div {
-					width: 100%;
-				}
-			}
+			
 			ul {
 				list-style-image: url('bullet.png');
+				line-height:2.5;
+				margin-top:50px;
 			}
 			
 			li {
 				text-align:left;
 			}
 			
+			
 			.p1 {
+				display:inline;
+				padding:5px 10px;
 				border:1px solid #d9d9d9;
 				border-radius:25px;
 				color:#5bd75b;
 				font-weight:500;
 				font-size:15px;
-				display:inline;
-				padding:10px;
-				
+			}
+			.p2{
+				margin-bottom:50px;
 			}
 			
 			#div_mid{
 				border-color:#5bd75b;
-				transform:translateY(10px);
 				background: url(corner.png) 0 0;
 				background-repeat: no-repeat;
 				background-size: 70px 70px;
 			}
 			
-			#div_mid:hover{
-				transform: translateY(-20px);
+			header{
+				margin-top:100px;
 			}
-			
 		</style>
 	</head>
 	
 	<body>
-		<header style="margin-top:100px;">
+		<header>
 			<h1>Limited pricing plans</h1>
 		</header>
-		<section>
+		<section class="flex-container">
 			<div>
 				<h1>Limited</h1>
-				<p><b>$2</b>/ month per user</p>
+				<p class="p2"><b>$2</b> / month per user</p>
+				
 				<p class="p1">Available for a month</p>
 				<ul>
 					<li><b>8</b> Team members</li>
@@ -101,7 +106,7 @@
 			</div>
 			<div id="div_mid">
 				<h1>Brilliant</h1>
-				<p><b>$5</b> / month per user</p>
+				<p class="p2"><b>$5</b> / month per user</p>
 				<p class="p1">Free 30 day trial</p>
 				<ul>
 					<li><b>Unlimited</b> Team members</li>
@@ -114,7 +119,7 @@
 			</div>
 			<div>
 				<h1>Basic</h1>
-				<p><b>$0</b> / month per user</p>
+				<p class="p2"><b>$0</b> / month per user</p>
 				<p class="p1">Totally free</p>
 				<ul>
 					<li><b>5</b> Team members</li>
