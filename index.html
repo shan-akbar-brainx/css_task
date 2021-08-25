@@ -7,10 +7,21 @@
 		<style>
 			*{
 				text-align:center;
-				font-family:sans-serif;
+				font-family:SEGOE UI;
+				color: #595959;
 				
 			}
 			
+			h1 {
+				font-size:40px;
+				font-weight:500;
+			}
+			
+			h2 {
+				font-size:30px;
+				font-weight:500;
+				margin-bottom:5px;
+			}
 			.flex-container{
 				display: flex;
 				flex-wrap: wrap;
@@ -25,11 +36,12 @@
 				display:inline-block;
 				border:2px solid #d9d9d9;
 				border-radius: 5px;
-				padding: 20px 10px 20px 10px;
+				padding: 15px 5px;
 				width:300px;
 				transition:all 0.5s;
-				margin:5px;
+				margin:10px;
 				height:75%;
+				position:relative;
 			}
 			
 			div:hover {
@@ -38,11 +50,14 @@
 	
 			button {
 				padding: 5px;
-				width: 50%;
+				width: 130px;
+				height: 50px;
 				border:none;
 				border-radius: 5px;
-				font-size: 15px;
+				font-size: 18px;
 				color:#5bd75b;
+				font-weight: 500;
+				margin: 20px 5px;
 			}
 			
 			button:hover {
@@ -53,7 +68,7 @@
 			ul {
 				list-style-image: url('bullet.png');
 				line-height:2.5;
-				margin-top:50px;
+				margin-top:40px;
 			}
 			
 			li {
@@ -71,7 +86,7 @@
 				font-size:15px;
 			}
 			.p2{
-				margin-bottom:50px;
+				margin:10px 5px 30px 5px;
 			}
 			
 			#div_mid{
@@ -82,7 +97,7 @@
 			}
 			
 			header{
-				margin-top:100px;
+				margin-top:40px;
 			}
 			
 		</style>
@@ -94,18 +109,14 @@
 		</header>
 		<section class="flex-container">
 			<div>
-				<h1>Limited</h1>
+				<h2>Limited</h2>
 				<p class="p2"><b>$2</b> / month per user</p>
 				
-				<svg height="1" width="40">
-				<line x1="0" y1="0" x2="40" y2="0" style="stroke:rgb(217,217,217);stroke-width:2;" />
-				</svg>
+				
 				
 				<p class="p1">Available for a month</p>
 				
-				<svg height="1" width="40">
-				<line x1="0" y1="0" x2="40" y2="0" style="stroke:rgb(217,217,217);stroke-width:2;" />
-				</svg>
+				
 				
 				<ul>
 					<li><b>8</b> Team members</li>
@@ -115,19 +126,15 @@
 				<button>Get started</button>
 			</div>
 			<div id="div_mid">
-				<h1>Brilliant</h1>
+				<h2>Brilliant</h2>
 				<p class="p2"><b>$5</b> / month per user</p>
 				
 				
-				<svg height="1" width="40">
-				<line x1="0" y1="0" x2="40" y2="0" style="stroke:rgb(217,217,217);stroke-width:2;" />
-				</svg>
+				
 				
 				<p class="p1">Free 30 day trial</p>
 				
-				<svg height="1" width="40">
-				<line x1="0" y1="0" x2="40" y2="0" style="stroke:rgb(217,217,217);stroke-width:2;" />
-				</svg>
+				
 				
 				<ul>
 					<li><b>Unlimited</b> Team members</li>
@@ -139,18 +146,10 @@
 				<button style="background-color:#5bd75b;color:white">Get started</button>
 			</div>
 			<div>
-				<h1>Basic</h1>
+				<h2>Basic</h2>
 				<p class="p2"><b>$0</b> / month per user</p>
 				
-				<svg height="1" width="40">
-				<line x1="0" y1="0" x2="40" y2="0" style="stroke:rgb(217,217,217);stroke-width:2;" />
-				</svg>
-				
 				<p class="p1">Totally free</p>
-				
-				<svg height="1" width="40">
-				<line x1="0" y1="0" x2="40" y2="0" style="stroke:rgb(217,217,217);stroke-width:2;" />
-				</svg>
 				
 				<ul>
 					<li><b>5</b> Team members</li>
@@ -160,7 +159,7 @@
 				<button>Get started</button>
 			</div>
 		</section>
-		<footer style="clear:left;margin-top:100px">
+		<footer style="clear:left;margin-top:50px">
 			<p>&copy;2020 Limited pricing plans. All rights reserved | Design by W3layouts</p>
 		</footer>
 	</body>
